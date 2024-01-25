@@ -1,0 +1,70 @@
+.dresscode {
+  margin-bottom: 100px;
+  position: relative;
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__wrapper {
+    max-width: 1042px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__slider {
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  &__slider-item {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+  }
+
+  &__info {
+    border-radius: 10px;
+    border: 1px solid #be8d34;
+    background-color: #fee3b2;
+    padding: 57px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #222;
+    p {
+      width: 100%;
+      max-width: 720px;
+
+      leading-trim: both;
+      text-edge: cap;
+      font-size: 22px;
+      line-height: 120%; /* 26.4px */
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .dresscode {
+    &__info {
+      padding: 40px 20px;
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .dresscode {
+    &__slider {
+      margin-right: -20px;
+    }
+  }
+}
