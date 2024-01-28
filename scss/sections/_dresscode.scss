@@ -3,6 +3,8 @@
   position: relative;
   &__title {
     margin-bottom: 40px;
+    position: relative;
+    z-index: 3;
   }
 
   &__wrapper {
