@@ -148,15 +148,31 @@
     display: flex;
     align-items: center;
 
+    &:hover {
+      p {
+        color: #be8d34;
+      }
+      svg {
+        path {
+          fill: #be8d34;
+        }
+      }
+    }
+
     svg {
       max-width: 18px;
       width: 100%;
       margin-right: 10px;
+
+      path {
+        transition: 0.3s;
+      }
     }
 
     p {
       font-size: 14px;
       font-weight: 400;
+      transition: 0.3s;
     }
   }
 
@@ -170,6 +186,12 @@
     font-size: 14px;
     text-decoration-line: underline;
     margin-bottom: 10px;
+    transition: 0.3s;
+
+    &:hover {
+      color: #be8d34;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
